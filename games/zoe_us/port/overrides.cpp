@@ -383,7 +383,7 @@ void MenuLabel(lifted::Context& c) {
 // hidden (their sprites not drawn, the cursor passing their rows), SOUND and EXIT moved up; RECOMP OPTIONS is a
 // virtual row (the game on EXIT's row, our flag set). RECOMP OPTIONS opens our pages in the same screen: the game's
 // rows hidden, ours drawn by the engine (SetGameTexts: Liberation Sans Bold in the game's colours, its letters
-// ~1.2 wider), the green frame moved to our row. Pages: the groups, POST PROCESSING / DISPLAY / FRAME RATE / SHADERS
+// ~1.2 wider), the green frame moved to our row. Pages: the groups, POST PROCESSING / DISPLAY / PERFORMANCE (FRAME RATE until 2026-11-22) / SHADERS
 // / LANGUAGE (SUBTITLES CUTSCENES, SUBTITLES GAMEPLAY - the captions moved here -, VOICES with the Japanese disc,
 // SUBTITLE LANGUAGE). Up / down choose, left / right change, circle confirms, cross goes back, triangle sets the
 // line back to its default; leaving with a start-only line changed asks RESTART NEEDED.
@@ -464,7 +464,7 @@ const char* PageName(int page) {
     switch (page) {
         case kPostPage: return "POST PROCESSING";
         case kDisplayPage: return "DISPLAY";
-        case kRatePage: return "FRAME RATE";
+        case kRatePage: return "PERFORMANCE";
         case kShaderPage: return "SHADERS";
         case kLanguagePage: return "LANGUAGE";
         case kRestartPage: return "RESTART NEEDED";
@@ -475,7 +475,7 @@ const char* PageName(int page) {
 // The engine's lines for a page (by its panel page or, for DISPLAY and SHADERS, by name).
 int PageOfSetting(const ps2host::PcSetting& s) {
     if (s.page == "POST PROCESSING") return kPostPage;
-    if (s.page == "FRAME RATE") return kRatePage;
+    if (s.page == "PERFORMANCE") return kRatePage;
     if (s.label == "DISPLAY MODE" || s.label == "RENDER RESOLUTION" || s.label == "ASPECT RATIO" ||
         s.label == "STRETCH CUTSCENES" || s.label == "FIELD OF VIEW")
         return kDisplayPage;
