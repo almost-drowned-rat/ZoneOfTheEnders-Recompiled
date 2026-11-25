@@ -21,7 +21,8 @@ and the Japanese voices with subtitles in English, French, German, Italian, Span
 - **Built from your own disc on your PC** - one first start of about 10 minutes; after it, the `game` folder is all
   you need.
 - **Windows and Linux** (`zoe_launcher.exe`, `ZOE-x86_64.AppImage`) - and **Android** as an app of its own:
-  [ZOE Recompiled for Android](https://github.com/almost-drowned-rat/ZOE-Recompiled-Android).
+  [ZOE Recompiled for Android](https://github.com/almost-drowned-rat/ZOE-Recompiled-Android)
+  (latest: [v0.5.1](https://github.com/almost-drowned-rat/ZOE-Recompiled-Android/releases/latest)).
 - **Higher resolutions** (up to 5x), **widescreen** 16:9 / 16:10 / 21:9 (widened, never stretched), field of view.
 - **Antialiasing** (FXAA, SMAA, SSAA 2x / 4x), anisotropic filter, bloom, FSR 1 upscaling.
 - **RECOMP OPTIONS** - a settings menu inside the game's own OPTIONS menu, in the game's style.
